@@ -1,6 +1,6 @@
 // let bolshoi=require('bolshoi');
 // 声明式配置API
-bolshoi.config({
+boli.config({
     // 源码文件目录
     src: {
         dirname: './src/'
@@ -33,10 +33,10 @@ bolshoi.config({
             'c': 'part/c'
         },
         // 转译相关
-        transfer:{
+        transfer: {
             // 是否转译
             isTransfer: true,
-            srcType: ['react','es2015']
+            srcType: ['react', 'es2015']
         },
         // 客户端模块化方案，默认webpack
         moduleType: 'amd',
@@ -49,13 +49,13 @@ bolshoi.config({
             dirname: '/suyun/resource/js'
         }
     },
-    css: {
-        dirname: 'css',
+    style: {
+        dirname: 'styles',
         ext: 'scss',
-        main: {
-            a: 'main.a',
-            b: 'main.b'
-        },
+        // main: {
+        //     a: 'main.a',
+        //     b: 'main.b'
+        // },
         minify: true,
         useHash: true
     },
@@ -74,13 +74,12 @@ bolshoi.config({
 
 // 命令式配置API，可细化配置不同文件处理方案
 // 同名配置覆盖父级
-bolshoi.config.spec('js', {
+boli.config.spec('js', {
     // 转译配置项
     transfer: {
         // 是否转译
         isTransfer: true,
-        // 转译目标规范
-        targetVersion: 'es5'
+        srcType: ['react', 'es2015']
     },
     // 是够uglify
     uglify: true,
@@ -93,3 +92,32 @@ bolshoi.config.spec('js', {
         dirname: '/suyun/resource/javascript'
     }
 });
+
+// boli.config.spec('style', {
+//     dev: {},
+//     prod: {
+//         // 是否uglify
+//         uglify: true,
+//         // 是否compress
+//         compress: true,
+//         // 是否使用hash指纹
+//         useHash: true
+//         wwebpackLoader: [{
+//             module: {
+//                 test: /\.(jsx?|es)$/,
+//                 loader: 'babel',
+//                 query: {
+//                     presets: ['es2015', 'react'],
+//                     cacheDirectory: true,
+//                     plugins: ['syntax-object-rest-spread']
+//                 }
+//             },
+//             plugin: null
+//         }],
+//         // 部署配置项
+//         // 仅在prod配置项中生效
+//         deploy: {
+//             dirname: '/suyun/resource/javascript',
+//         }
+//     }
+// });
