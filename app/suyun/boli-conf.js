@@ -61,3 +61,7 @@ boli.config.spec('resource', {
         }
     }
 });
+
+
+// 使用插件
+boli.use('boli-plugin-loader-vue');
