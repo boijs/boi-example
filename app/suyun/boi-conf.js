@@ -1,4 +1,4 @@
-boli.config.spec('basic', {
+boi.config.spec('basic', {
     // 本地编译目录
     localPath: {
         src: './src/',
@@ -13,7 +13,7 @@ boli.config.spec('basic', {
 });
 
 // 同名配置覆盖父级
-boli.config.spec('js', {
+boi.config.spec('js', {
     // 源文件扩展名
     extType: 'js',
     // 源文件使用的编码类型，值可以是单个string，也可以是数组
@@ -34,7 +34,7 @@ boli.config.spec('js', {
     }
 });
 
-boli.config.spec('style', {
+boi.config.spec('style', {
     extType: 'scss',
     // 是否uglify
     uglify: true,
@@ -49,7 +49,7 @@ boli.config.spec('style', {
     }
 });
 
-boli.config.spec('resource', {
+boi.config.spec('resource', {
     image: {
         extType: ['png', 'jpg'],
         base64: true,
@@ -64,4 +64,4 @@ boli.config.spec('resource', {
 
 
 // 使用插件
-boli.use('boli-plugin-loader-vue');
+boi.use('boi-plugin-loader-vue');
