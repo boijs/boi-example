@@ -1,12 +1,16 @@
 import '../styles/main.a.scss';
-import Vue from 'vue';
-import APP from './part.a.vue';
+import a from './part/part.a.js';
+import b from './part/part.b.js';
 
-new Vue({
-    el: 'body',
-    components: {
-        App
-    }
-});
-
-console.log('a main')
+window.onload = function() {
+    console.log('main chunk a is loaded');
+    a();
+    b();
+    require.ensure([], (require) => {
+        let c = require('./part/daojia_c');
+        c.fn();
+    });
+    // require.ensure([], function(require) {
+    //     require('./main.b.js')
+    // })
+};
