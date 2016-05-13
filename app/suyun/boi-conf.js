@@ -5,10 +5,12 @@ boi.use('boi-plugin-loader-vue');
 
 // 配置
 boi.spec('basic', {
+    appName: 'suyun',
     // 本地编译目录
     localPath: {
         src: './src/',
-        dest: './dest/'
+        dest: './dest/',
+        thirdparty: './libs/'
     },
     // cdn url
     cdn: {

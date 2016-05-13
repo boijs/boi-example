@@ -6,11 +6,21 @@ window.onload = function() {
     console.log('main chunk a is loaded');
     a();
     b();
+    // 第三个参数是chunk name，决定编译打包的文件名称
     require.ensure([], (require) => {
-        let c = require('./part/daojia_c');
+        let c = require('./part/part.c');
         c.fn();
-    });
-    // require.ensure([], function(require) {
-    //     require('./main.b.js')
-    // })
+    }, 'asyncC');
 };
+
+// ADM sample
+// require(['./part/part.a.js', './part/part.b.js'], function(a, b) {
+//     console.log('main chunk a is loaded');
+//     a();
+//     b();
+//     if (true) {
+//         require(['./part/part.c.js'], function(c) {
+//             c();
+//         });
+//     }
+// });

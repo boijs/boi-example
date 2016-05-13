@@ -8,7 +8,10 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "commonjs": "^0.0.1",
+    "requirejs": "^2.2.0"
+  },
   "dependencies": {
     "vue": "^1.0.21"
   }
