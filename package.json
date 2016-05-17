@@ -1,19 +1,11 @@
 {
     "name": "boi-example",
-    "version": "1.0.0",
+    "version": "0.0.0",
     "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ihardcoder/boli-example.git"
     },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/ihardcoder/boli-example/issues"
-    },
-    "homepage": "https://github.com/ihardcoder/boli-example#readme"
+    "author": "zhoujunpeng",
+    "license": "ISC"
 }

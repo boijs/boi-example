@@ -1,18 +1,14 @@
 {
-  "name": "suyun",
-  "version": "1.0.0",
-  "description": "",
-  "main": "boli-conf.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "commonjs": "^0.0.1",
-    "requirejs": "^2.2.0"
-  },
-  "dependencies": {
-    "vue": "^1.0.21"
-  }
+    "name": "suyun",
+    "version": "1.0.0",
+    "description": "",
+    "main": "boli-conf.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "vue": "^1.0.21"
+    }
 }

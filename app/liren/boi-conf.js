@@ -1,9 +1,6 @@
-// 使用插件
-boi.use('boi-plugin-loader-vue');
-
 // 配置
 boi.spec('basic', {
-    appName: 'suyun',
+    appName: 'liren',
     // 本地编译目录
     localPath: {
         src: './src/',
@@ -13,7 +10,7 @@ boi.spec('basic', {
     // cdn url
     cdn: {
         server: 'static.daojia.com',
-        path: '/suyun/'
+        path: '/liren/'
     }
 });
 
@@ -21,19 +18,14 @@ boi.spec('basic', {
 boi.spec('js', {
     extType: 'js',
     srcType: ['es2015'],
-    files: {
-        vendor: ['vue']
-    },
     srcDir: 'js',
-    destDir: 'js',
-    useHash: true
+    destDir: 'js'
 });
 
 boi.spec('style', {
     extType: 'scss',
     srcDir: 'style',
-    destDir: 'style',
-    useHash: true
+    destDir: 'style'
 });
 
 boi.spec('html', {
