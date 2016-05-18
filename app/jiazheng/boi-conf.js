@@ -1,19 +1,15 @@
-// 使用插件
-boi.use('boi-plugin-loader-vue');
-
 // 配置
 boi.spec('basic', {
-    appName: 'suyun',
+    appName: 'jiazheng',
     // 本地编译目录
     localPath: {
         src: './src/',
-        dest: './dest/',
-        thirdparty: './libs/'
+        dest: './dest/'
     },
     // cdn url
     cdn: {
         server: 'static.daojia.com',
-        path: '/suyun/'
+        path: '/jiazheng/'
     }
 });
 
@@ -26,6 +22,13 @@ boi.spec('js', {
     useHash: true
 });
 
+boi.spec('style', {
+    extType: 'scss',
+    srcDir: 'style',
+    destDir: 'style',
+    useHash: true
+});
+
 boi.spec('html', {
     extType: 'html',
     srcDir: 'views',
@@ -34,5 +37,5 @@ boi.spec('html', {
 boi.spec('image', {
     extType: ['png', 'jpg'],
     destDir: 'image',
-    // cdn: 'dj.58cdn.com.cn/fe/h5/djh5/css/images/',
+    cdn: 'img.daojia.com',
 });

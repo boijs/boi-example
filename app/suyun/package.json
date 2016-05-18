@@ -1,14 +1,18 @@
 {
-    "name": "suyun",
-    "version": "1.0.0",
-    "description": "",
-    "main": "boli-conf.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "vue": "^1.0.21"
-    }
+  "name": "suyun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "boli-conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^1.0.21",
+    "vue-router": "^0.7.13"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^1.0.1"
+  }
 }
