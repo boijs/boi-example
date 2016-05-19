@@ -9,10 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vue": "^1.0.21",
     "vue-router": "^0.7.13"
   },
   "devDependencies": {
-    "extract-text-webpack-plugin": "^1.0.1"
+    "boi-plugin-loader-vue": "0.0.7"
   }
 }
