@@ -37,5 +37,5 @@ boi.spec('image', {
     extType: ['png', 'jpg'],
     destDir: 'image',
     useHash: false,
-    cdn: 'img.daojia.com',
+    // cdn: 'img.daojia.com',
 });
