@@ -19,7 +19,15 @@ boi.spec('js', {
     srcType: ['es2015'],
     srcDir: 'js',
     destDir: 'js',
-    useHash: true
+    useHash: true,
+    files:{
+        main: {
+            'main.a': 'main.a.js',
+            'main.b': 'main.b.js'
+        },
+        vendor: ['vue']
+    }
+    // mutiEntriesVendor: true
 });
 
 boi.spec('style', {
