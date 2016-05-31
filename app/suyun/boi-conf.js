@@ -22,8 +22,7 @@ boi.spec('js', {
     extType: 'js',
     srcType: ['es2015'],
     srcDir: 'js',
-    destDir: 'js',
-    useHash: true
+    destDir: 'js'
 });
 
 boi.spec('html', {

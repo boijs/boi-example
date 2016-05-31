@@ -4,7 +4,8 @@ boi.spec('basic', {
     // 本地编译目录
     localPath: {
         src: './src/',
-        dest: './dest/'
+        dest: './dest/',
+        thirdparty: './libs/'
     },
     // cdn url
     cdn: {
@@ -20,13 +21,13 @@ boi.spec('js', {
     srcDir: 'js',
     destDir: 'js',
     useHash: true,
-    files:{
-        main: {
-            'main.a': 'main.a.js',
-            'main.b': 'main.b.js'
-        },
-        vendor: ['vue']
-    }
+    // files:{
+    //     main: {
+    //         'main.a': 'main.a.js',
+    //         'main.b': 'main.b.js'
+    //     },
+    //     vendor: ['vue']
+    // }
     // mutiEntriesVendor: true
 });
 
@@ -40,6 +41,7 @@ boi.spec('style', {
 boi.spec('html', {
     extType: 'html',
     srcDir: 'views',
+    staticSrcmap: true
 });
 
 boi.spec('image', {

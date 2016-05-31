@@ -12,6 +12,6 @@ window.onload = function() {
         require.ensure([], (require) => {
             let c = require('./part/part.c');
             c.fn();
-        });
+        },'asyncC');
     }
 };
