@@ -33,7 +33,7 @@ boi.spec('js', {
 
 boi.spec('style', {
     extType: 'scss',
-    srcDir: 'style',
+    srcDir: 'styles',
     destDir: 'style',
     useHash: true
 });

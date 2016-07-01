@@ -19,10 +19,23 @@ boi.spec('basic', {
 
 // 同名配置覆盖父级
 boi.spec('js', {
-    extType: 'js',
-    srcType: ['es2015'],
-    srcDir: 'js',
-    destDir: 'js'
+  extType: 'js',
+  srcType: ['es2015'],
+  srcDir: 'js',
+  destDir: 'js',
+  // webpackConfig: {
+  //   loader: {
+  //     test: /\.js$/,
+  //     loader: 'babel',
+  //     query: {
+  //       presets: [
+  //         'babel-preset-stage-0',
+  //         'babel-preset-es2015'
+  //       ],
+  //       plugins: ["transform-object-assign"]
+  //     }
+  //   }
+  // }
 });
 
 boi.spec('html', {
@@ -35,3 +48,6 @@ boi.spec('image', {
     destDir: 'image',
     // cdn: 'dj.58cdn.com.cn/fe/h5/djh5/css/images/',
 });
+// boi.serve({
+//     port: '8888'
+// })
