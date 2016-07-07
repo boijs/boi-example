@@ -1,6 +1,6 @@
 // 配置
 boi.spec('basic', {
-    appName: 'liren',
+    appName: 'jiazheng',
     // 本地编译目录
     localPath: {
         src: './src/',
@@ -10,7 +10,7 @@ boi.spec('basic', {
     // cdn url
     cdn: {
         server: 'static.daojia.com',
-        path: '/liren/'
+        path: '/jiazheng/'
     }
 });
 
@@ -19,23 +19,33 @@ boi.spec('js', {
     extType: 'js',
     srcType: ['es2015'],
     srcDir: 'js',
-    destDir: 'js'
+    destDir: 'js',
+    useHash: true,
+    // files:{
+    //     main: {
+    //         'main.a': 'main.a.js',
+    //         'main.b': 'main.b.js'
+    //     },
+    //     vendor: ['vue']
+    // }
+    // mutiEntriesVendor: true
 });
 
 boi.spec('style', {
     extType: 'scss',
-    srcDir: 'style',
-    destDir: 'style'
+    srcDir: 'styles',
+    destDir: 'style',
+    useHash: true
 });
 
 boi.spec('html', {
     extType: 'html',
     srcDir: 'views',
+    staticSrcmap: true
 });
 
 boi.spec('image', {
     extType: ['png', 'jpg'],
     destDir: 'image',
-    useHash: false,
-    // cdn: 'img.daojia.com',
+    cdn: 'img.daojia.com',
 });
