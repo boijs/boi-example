@@ -1,0 +1,12 @@
+{
+  "name": "svgtest",
+  "version": "0.0.0",
+  "description": "svgtest built on boi",
+  "dependencies": {},
+  "devDependencies": {
+    "boi-plugin-loader-svgsprite": "^1.0.0"
+  },
+  "keywords": [
+    "boi"
+  ]
+}
