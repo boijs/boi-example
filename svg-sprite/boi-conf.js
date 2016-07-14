@@ -1,5 +1,5 @@
 boi.use('boi-plugin-loader-svgsprite',{
-    name: 'svg/svg-sprite.[contenthash:8].svg',
+    name: 'svg/svg-sprite.svg',
     inject: false,
     targets: ['index.svgtest.html']
 });
@@ -14,10 +14,10 @@ boi.spec('basic', {
         thirdparty: './libs/'
     },
     // cdn url
-    cdn: {
-        server: 'static.svgtest.com',
-        path: '/svgtest/'
-    }
+    // cdn: {
+    //     server: 'static.svgtest.com',
+    //     path: '/svgtest/'
+    // }
 });
 
 // 同名配置覆盖父级

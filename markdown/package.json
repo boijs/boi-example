@@ -1,0 +1,10 @@
+{
+  "name": "boi-markdown-example",
+  "version": "1.0.0",
+  "description": "* 配置`boi-conf.js`: `boi.use('boi-plugin-loader-vue');` * 运行`boi serve` * 访问`localhost:8888`",
+  "author": "zhoujunpeng",
+  "license": "ISC",
+  "devDependencies": {
+    "boi-plugin-loader-md": "^1.0.1"
+  }
+}

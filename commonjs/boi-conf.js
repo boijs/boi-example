@@ -20,7 +20,7 @@ boi.spec('js', {
     srcType: ['es2015'],
     srcDir: 'js',
     destDir: 'js',
-    useHash: true,
+    useHash: false,
     // files:{
     //     main: {
     //         'main.a': 'main.a.js',
@@ -35,7 +35,7 @@ boi.spec('style', {
     extType: 'scss',
     srcDir: 'styles',
     destDir: 'style',
-    useHash: true
+    useHash: false
 });
 
 boi.spec('html', {

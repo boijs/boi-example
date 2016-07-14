@@ -1,10 +1,5 @@
 // 使用插件
-boi.use('boi-plugin-loader-vue');
-boi.use('boi-plugin-loader-svgsprite',{
-    name: 'svg/svg-sprite.svg',
-    inject: false,
-    targets: ['index.html']
-});
+boi.use('boi-plugin-loader-md');
 // 配置
 boi.spec('basic', {
     appName: 'suyun',
@@ -14,11 +9,6 @@ boi.spec('basic', {
         dest: './dest/',
         thirdparty: './libs/'
     },
-    // cdn url
-    cdn: {
-        server: 'static.daojia.com',
-        path: '/suyun/'
-    }
 });
 
 // 同名配置覆盖父级

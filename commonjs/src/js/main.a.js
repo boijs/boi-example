@@ -1,5 +1,4 @@
 import '../styles/main.a.scss';
-import Vue from 'vue';
 import a from './part/part.a.js';
 import b from './part/part.b.js';
 

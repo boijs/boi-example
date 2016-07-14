@@ -156,17 +156,16 @@ body {
     <pingjia-info :info='info' :isshowcomplaint='isshowcomplaint' :orderid='orderid'></pingjia-info>
     <pingjia-form :info='info'></pingjia-form>
 </div>
-<!-- 无数据时显示loading -->
-<!-- <div v-else class="order_pingjia_loading">
-      loading
-  </div> -->
-
+<svg style='width:200px;height:200px;'>
+  <use xlink:href='/svg/svg-sprite.svg#icon-bottle' />
+</svg>
 </template>
 
 <script>
 
 import pingjiaInfo from './components/pingjia_info.vue';
 import pingjiaForm from './components/pingjia_form.vue';
+
 var pageData = {
     "carVo": {
         "carmodelid": 0,

@@ -3,6 +3,8 @@ import VueRouter from 'vue-router';
 import App from './App.vue';
 import Complaint from './Complaint.vue';
 
+let svgs = require.context("../assets/svg/", false, /\.svg$/);
+
 Vue.use(VueRouter);
 
 // 自定义过滤器，根据评分数值判断是否点亮星星
